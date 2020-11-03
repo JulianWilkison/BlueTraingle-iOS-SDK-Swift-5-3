@@ -6,11 +6,33 @@
 //
 
 import SwiftUI
+import BlueTriangleSDK_iOS
 
 struct ContentView: View {
+    var timer = BTTimer();
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            Text("Hello, world!")
+                .padding()
+            Button(action:{
+                timer.setPageName("My-Page-Name");
+                timer.setTrafficSegmentName("my-Traffic-Segment");
+                timer.setCampaignName("campaign-1");
+                timer.setCampaignMedium("mobile-ios");
+                timer.start();
+                
+            }){
+                Text("Start Timer")
+            }
+            Button(action:{
+                
+                BTTracker().submitTimer(self.timer);
+                
+            }){
+                Text("Stop Timer")
+            }
+            
+        }
     }
 }
 

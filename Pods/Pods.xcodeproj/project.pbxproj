@@ -1,0 +1,1001 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		106D035CEB6A4CC2C4D6315D208EE4CE /* ThreadSafeMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D239F925B971D5C282E568CFC162EB /* ThreadSafeMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D295D1D0528AE5E568531A53AA93683 /* BTUploadOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9D7ABBD0EF5E24B7FE4BC91C6268F3 /* BTUploadOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		204062859FB507E5C0CB30D69B1367F8 /* BTUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 642BA4A7CD749967D9B5A7A0B04A1D2B /* BTUploadOperation.m */; };
+		2A88939B089D5D78EC51DB2117209C56 /* Pods-TestBlueTrainglePodTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF59CDB5EBC928BF3BB76ACE0A9EBCA /* Pods-TestBlueTrainglePodTests-dummy.m */; };
+		2EDFB70E4B962A3C0437F522B12BAEFB /* BTTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 399823A103DEFD4CEA9A674FB973480B /* BTTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C3159BFD8F6930C9BFA33EBB043B963 /* BlueTriangleSDK-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA607AFBE2FE7536E096656DD49E1BD9 /* BlueTriangleSDK-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E0F648F2A4F0BD40CD243545B29082F /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6CD88736896FDD2D8E466A15AAB2BE6 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45BC6E2DDBEA34267B2DCE5C0F7EA999 /* BlueTriangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 83815439100AD296180CA8774F4587E3 /* BlueTriangle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		564562683B55CF9CA96CFC5AD8173C73 /* BTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE25AA8317CCFE28022F5658F47723 /* BTTimer.m */; };
+		749CEAD43B480BA3B27AC35761654E4E /* Pods-TestBlueTrainglePodTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 365B0C2CB918E7E070EC02AED2EF67FB /* Pods-TestBlueTrainglePodTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		832B560C8DBCB877A7C81F5A7DB5FF7A /* BTUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7A783681A08B1BBB29285A2ACADE5F /* BTUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85E5F9B6067ED1CE0395D1F3503B23F3 /* Pods-TestBlueTrainglePod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ECC53AB7B7BE3E0B2B123626D443AB0 /* Pods-TestBlueTrainglePod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FCAC043989833BF3C6E399EAD0C1835 /* Pods-TestBlueTrainglePod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB46E00B307E61684F64E1A12A832998 /* Pods-TestBlueTrainglePod-dummy.m */; };
+		967DD416A57F85784EC684FB5A8B6242 /* BTUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9426CF8A2F9EAA4664079A4629734A05 /* BTUploader.m */; };
+		A55AB107F9FCAE9DA2C1AF7625210BE8 /* ThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8072F0CBE28490215BC69FAB504619F4 /* ThreadSafeMutableDictionary.m */; };
+		A5D91C13EE230FA4E4BEE1C75F0EFF2C /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9983CF88BD6E679ABADB396409993532 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-dummy.m */; };
+		AE6AA0430743CE4C63F0A39055B4BADC /* BTTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 764078C7F7D7E3D58101467F9D846C5C /* BTTracker.m */; };
+		DE576E15131AB20DE7CE7FC47D7F82DA /* BlueTriangleSDK-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9259CC69A43716A0D6BDA095724854F8 /* BlueTriangleSDK-iOS-dummy.m */; };
+		E5B03D012551B51B00D4354B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B03CF82551A9E700D4354B /* Foundation.framework */; };
+		F9B0021DAE73478FDC6A9E2C80113BC1 /* BTTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9F9818AC5A6FEB1CBBCBB2C74605BA /* BTTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3417C2623030F72BD988270680A17788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DE99BED19EC56AA3E6164CDA3CB666E;
+			remoteInfo = "Pods-TestBlueTrainglePod";
+		};
+		845D3209DCAC0089FB01CAC647BC0E17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F221FF23ACACD5732804C4538CB9C56F;
+			remoteInfo = "BlueTriangleSDK-iOS";
+		};
+		C739D0FCCC9CEA71220A70CF8C7B9D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F221FF23ACACD5732804C4538CB9C56F;
+			remoteInfo = "BlueTriangleSDK-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0272937D897EE4B172FBA8FA83227346 /* Pods-TestBlueTrainglePodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestBlueTrainglePodTests.release.xcconfig"; sourceTree = "<group>"; };
+		06865ED376B43ADBEBD465CA828E4792 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DEF06B196CAD97CE61F0E03B2DE5BD2 /* BlueTriangleSDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueTriangleSDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0FACF13A2C489F853019AA1515D3B183 /* Pods_TestBlueTrainglePodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestBlueTrainglePodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1255ABE3174954AF863D1200DCA99A49 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C7A783681A08B1BBB29285A2ACADE5F /* BTUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUploader.h; path = "BlueTriangleSDK-iOS/Classes/BTUploader.h"; sourceTree = "<group>"; };
+		1FF59CDB5EBC928BF3BB76ACE0A9EBCA /* Pods-TestBlueTrainglePodTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestBlueTrainglePodTests-dummy.m"; sourceTree = "<group>"; };
+		34894234E91E1523E41FD4AD22569368 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-frameworks.sh"; sourceTree = "<group>"; };
+		34C2576CBC586CBD1A20002C03B06F6F /* BlueTriangleSDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueTriangleSDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		365B0C2CB918E7E070EC02AED2EF67FB /* Pods-TestBlueTrainglePodTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TestBlueTrainglePodTests-umbrella.h"; sourceTree = "<group>"; };
+		399823A103DEFD4CEA9A674FB973480B /* BTTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTTimer.h; path = "BlueTriangleSDK-iOS/Classes/BTTimer.h"; sourceTree = "<group>"; };
+		3ECC53AB7B7BE3E0B2B123626D443AB0 /* Pods-TestBlueTrainglePod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TestBlueTrainglePod-umbrella.h"; sourceTree = "<group>"; };
+		46D239F925B971D5C282E568CFC162EB /* ThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThreadSafeMutableDictionary.h; path = "BlueTriangleSDK-iOS/Classes/ThreadSafeMutableDictionary.h"; sourceTree = "<group>"; };
+		497C581888A56CEA149907FFF939762E /* Pods-TestBlueTrainglePod-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestBlueTrainglePod-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B37AECC968B4DFBF2DEA215EEB12EE8 /* Pods-TestBlueTrainglePodTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestBlueTrainglePodTests-Info.plist"; sourceTree = "<group>"; };
+		50B55389B27FE59AEBC8779D43372D3D /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		556292E2F13EB7E510C06653DC556224 /* BlueTriangleSDK-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BlueTriangleSDK-iOS-Info.plist"; sourceTree = "<group>"; };
+		642BA4A7CD749967D9B5A7A0B04A1D2B /* BTUploadOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUploadOperation.m; path = "BlueTriangleSDK-iOS/Classes/BTUploadOperation.m"; sourceTree = "<group>"; };
+		72DE25AA8317CCFE28022F5658F47723 /* BTTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTTimer.m; path = "BlueTriangleSDK-iOS/Classes/BTTimer.m"; sourceTree = "<group>"; };
+		764078C7F7D7E3D58101467F9D846C5C /* BTTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTTracker.m; path = "BlueTriangleSDK-iOS/Classes/BTTracker.m"; sourceTree = "<group>"; };
+		7679B48A6140DBEB7749D450A679B75A /* Pods-TestBlueTrainglePod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestBlueTrainglePod.debug.xcconfig"; sourceTree = "<group>"; };
+		77305A4DF0B22513FDE25D083E98F6DF /* Pods-TestBlueTrainglePodTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestBlueTrainglePodTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E9F9818AC5A6FEB1CBBCBB2C74605BA /* BTTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTTracker.h; path = "BlueTriangleSDK-iOS/Classes/BTTracker.h"; sourceTree = "<group>"; };
+		7ED7295C885398AF75699A10E76A39F9 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8072F0CBE28490215BC69FAB504619F4 /* ThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ThreadSafeMutableDictionary.m; path = "BlueTriangleSDK-iOS/Classes/ThreadSafeMutableDictionary.m"; sourceTree = "<group>"; };
+		83815439100AD296180CA8774F4587E3 /* BlueTriangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BlueTriangle.h; path = "BlueTriangleSDK-iOS/Classes/BlueTriangle.h"; sourceTree = "<group>"; };
+		8C015A1D7D01302B9EDF5D6227A9F622 /* BlueTriangleSDK-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueTriangleSDK-iOS-prefix.pch"; sourceTree = "<group>"; };
+		9259CC69A43716A0D6BDA095724854F8 /* BlueTriangleSDK-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueTriangleSDK-iOS-dummy.m"; sourceTree = "<group>"; };
+		92E08FA00D6B036755FAABA5234ADEDB /* Pods-TestBlueTrainglePod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestBlueTrainglePod.release.xcconfig"; sourceTree = "<group>"; };
+		9426CF8A2F9EAA4664079A4629734A05 /* BTUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BTUploader.m; path = "BlueTriangleSDK-iOS/Classes/BTUploader.m"; sourceTree = "<group>"; };
+		9983CF88BD6E679ABADB396409993532 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1679B3537EED5F3199EE3B96163E973 /* Pods-TestBlueTrainglePod-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestBlueTrainglePod-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB8B3C116B80E0B750A6D7334B116C6C /* Pods-TestBlueTrainglePodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestBlueTrainglePodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3FED70A90086E5C148AE7221B4D8770 /* Pods_TestBlueTrainglePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestBlueTrainglePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CD88736896FDD2D8E466A15AAB2BE6 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-umbrella.h"; sourceTree = "<group>"; };
+		C17D76E5FDF7961317623C672FA0AC21 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.modulemap"; sourceTree = "<group>"; };
+		C72F7724FA567FF570C6B328D758BB85 /* Pods-TestBlueTrainglePod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestBlueTrainglePod-Info.plist"; sourceTree = "<group>"; };
+		CAC974173569FE30EFA31C8DDFCB4EB9 /* Pods-TestBlueTrainglePodTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestBlueTrainglePodTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D121B738512088C630EABC24ED3ADF67 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-Info.plist"; sourceTree = "<group>"; };
+		D19BDEED7C76E5CD820136FEB35F212C /* BlueTriangleSDK-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "BlueTriangleSDK-iOS.modulemap"; sourceTree = "<group>"; };
+		D23EDEB0A28EE42EE7C4CEFA51A53726 /* Pods-TestBlueTrainglePod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TestBlueTrainglePod.modulemap"; sourceTree = "<group>"; };
+		DED90CF3EEFC965DCAC5F1D1147C45E5 /* BlueTriangleSDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BlueTriangleSDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E2FB14462E4EDC326A34684A02AB5C48 /* Pods-TestBlueTrainglePodTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TestBlueTrainglePodTests.modulemap"; sourceTree = "<group>"; };
+		E54E7D09F1170231944DD18A65C3606F /* Pods_TestBlueTrainglePod_TestBlueTrainglePodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestBlueTrainglePod_TestBlueTrainglePodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B03CF82551A9E700D4354B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA607AFBE2FE7536E096656DD49E1BD9 /* BlueTriangleSDK-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueTriangleSDK-iOS-umbrella.h"; sourceTree = "<group>"; };
+		EC9D7ABBD0EF5E24B7FE4BC91C6268F3 /* BTUploadOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BTUploadOperation.h; path = "BlueTriangleSDK-iOS/Classes/BTUploadOperation.h"; sourceTree = "<group>"; };
+		F59053DEAB53EA1A043E4A34777D9DAA /* Pods-TestBlueTrainglePod-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestBlueTrainglePod-frameworks.sh"; sourceTree = "<group>"; };
+		FB46E00B307E61684F64E1A12A832998 /* Pods-TestBlueTrainglePod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestBlueTrainglePod-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17AA968A60F36452440083E033F14301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4E269A94926158E8A50007F90876796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B03D012551B51B00D4354B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BC05D364C56AF76B0E990B5D244EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDAAB082A2CD8F9ECBA6091E2EC00AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DAC7A9ED1ECB3365AED347FEDABB906 /* BlueTriangleSDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				83815439100AD296180CA8774F4587E3 /* BlueTriangle.h */,
+				399823A103DEFD4CEA9A674FB973480B /* BTTimer.h */,
+				72DE25AA8317CCFE28022F5658F47723 /* BTTimer.m */,
+				7E9F9818AC5A6FEB1CBBCBB2C74605BA /* BTTracker.h */,
+				764078C7F7D7E3D58101467F9D846C5C /* BTTracker.m */,
+				1C7A783681A08B1BBB29285A2ACADE5F /* BTUploader.h */,
+				9426CF8A2F9EAA4664079A4629734A05 /* BTUploader.m */,
+				EC9D7ABBD0EF5E24B7FE4BC91C6268F3 /* BTUploadOperation.h */,
+				642BA4A7CD749967D9B5A7A0B04A1D2B /* BTUploadOperation.m */,
+				46D239F925B971D5C282E568CFC162EB /* ThreadSafeMutableDictionary.h */,
+				8072F0CBE28490215BC69FAB504619F4 /* ThreadSafeMutableDictionary.m */,
+				F7CA474766D676B132BCA3A390C20074 /* Support Files */,
+			);
+			path = "BlueTriangleSDK-iOS";
+			sourceTree = "<group>";
+		};
+		1F7FEEC45077A93A5A57EE4ACF5F0F3B /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C17D76E5FDF7961317623C672FA0AC21 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.modulemap */,
+				7ED7295C885398AF75699A10E76A39F9 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-acknowledgements.markdown */,
+				06865ED376B43ADBEBD465CA828E4792 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-acknowledgements.plist */,
+				9983CF88BD6E679ABADB396409993532 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-dummy.m */,
+				34894234E91E1523E41FD4AD22569368 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-frameworks.sh */,
+				D121B738512088C630EABC24ED3ADF67 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-Info.plist */,
+				B6CD88736896FDD2D8E466A15AAB2BE6 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-umbrella.h */,
+				1255ABE3174954AF863D1200DCA99A49 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.debug.xcconfig */,
+				50B55389B27FE59AEBC8779D43372D3D /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.release.xcconfig */,
+			);
+			name = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests";
+			path = "Target Support Files/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests";
+			sourceTree = "<group>";
+		};
+		5E7E6B2F9AA7B5BDE2494CB39057C62E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC7A9ED1ECB3365AED347FEDABB906 /* BlueTriangleSDK-iOS */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		600B31C43C0BDF56A201F3D40AC9F84B /* Pods-TestBlueTrainglePod */ = {
+			isa = PBXGroup;
+			children = (
+				D23EDEB0A28EE42EE7C4CEFA51A53726 /* Pods-TestBlueTrainglePod.modulemap */,
+				497C581888A56CEA149907FFF939762E /* Pods-TestBlueTrainglePod-acknowledgements.markdown */,
+				A1679B3537EED5F3199EE3B96163E973 /* Pods-TestBlueTrainglePod-acknowledgements.plist */,
+				FB46E00B307E61684F64E1A12A832998 /* Pods-TestBlueTrainglePod-dummy.m */,
+				F59053DEAB53EA1A043E4A34777D9DAA /* Pods-TestBlueTrainglePod-frameworks.sh */,
+				C72F7724FA567FF570C6B328D758BB85 /* Pods-TestBlueTrainglePod-Info.plist */,
+				3ECC53AB7B7BE3E0B2B123626D443AB0 /* Pods-TestBlueTrainglePod-umbrella.h */,
+				7679B48A6140DBEB7749D450A679B75A /* Pods-TestBlueTrainglePod.debug.xcconfig */,
+				92E08FA00D6B036755FAABA5234ADEDB /* Pods-TestBlueTrainglePod.release.xcconfig */,
+			);
+			name = "Pods-TestBlueTrainglePod";
+			path = "Target Support Files/Pods-TestBlueTrainglePod";
+			sourceTree = "<group>";
+		};
+		71BE970E29D0D305FDFA74ED0AD96423 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34C2576CBC586CBD1A20002C03B06F6F /* BlueTriangleSDK_iOS.framework */,
+				B3FED70A90086E5C148AE7221B4D8770 /* Pods_TestBlueTrainglePod.framework */,
+				E54E7D09F1170231944DD18A65C3606F /* Pods_TestBlueTrainglePod_TestBlueTrainglePodUITests.framework */,
+				0FACF13A2C489F853019AA1515D3B183 /* Pods_TestBlueTrainglePodTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87AA229F2916D1F6B71051F769596C0C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				600B31C43C0BDF56A201F3D40AC9F84B /* Pods-TestBlueTrainglePod */,
+				1F7FEEC45077A93A5A57EE4ACF5F0F3B /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests */,
+				C3449E9589C81E2BDEE79C676258B85D /* Pods-TestBlueTrainglePodTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E5B03CF82551A9E700D4354B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C3449E9589C81E2BDEE79C676258B85D /* Pods-TestBlueTrainglePodTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB14462E4EDC326A34684A02AB5C48 /* Pods-TestBlueTrainglePodTests.modulemap */,
+				77305A4DF0B22513FDE25D083E98F6DF /* Pods-TestBlueTrainglePodTests-acknowledgements.markdown */,
+				CAC974173569FE30EFA31C8DDFCB4EB9 /* Pods-TestBlueTrainglePodTests-acknowledgements.plist */,
+				1FF59CDB5EBC928BF3BB76ACE0A9EBCA /* Pods-TestBlueTrainglePodTests-dummy.m */,
+				4B37AECC968B4DFBF2DEA215EEB12EE8 /* Pods-TestBlueTrainglePodTests-Info.plist */,
+				365B0C2CB918E7E070EC02AED2EF67FB /* Pods-TestBlueTrainglePodTests-umbrella.h */,
+				AB8B3C116B80E0B750A6D7334B116C6C /* Pods-TestBlueTrainglePodTests.debug.xcconfig */,
+				0272937D897EE4B172FBA8FA83227346 /* Pods-TestBlueTrainglePodTests.release.xcconfig */,
+			);
+			name = "Pods-TestBlueTrainglePodTests";
+			path = "Target Support Files/Pods-TestBlueTrainglePodTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				5E7E6B2F9AA7B5BDE2494CB39057C62E /* Pods */,
+				71BE970E29D0D305FDFA74ED0AD96423 /* Products */,
+				87AA229F2916D1F6B71051F769596C0C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7CA474766D676B132BCA3A390C20074 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D19BDEED7C76E5CD820136FEB35F212C /* BlueTriangleSDK-iOS.modulemap */,
+				9259CC69A43716A0D6BDA095724854F8 /* BlueTriangleSDK-iOS-dummy.m */,
+				556292E2F13EB7E510C06653DC556224 /* BlueTriangleSDK-iOS-Info.plist */,
+				8C015A1D7D01302B9EDF5D6227A9F622 /* BlueTriangleSDK-iOS-prefix.pch */,
+				EA607AFBE2FE7536E096656DD49E1BD9 /* BlueTriangleSDK-iOS-umbrella.h */,
+				0DEF06B196CAD97CE61F0E03B2DE5BD2 /* BlueTriangleSDK-iOS.debug.xcconfig */,
+				DED90CF3EEFC965DCAC5F1D1147C45E5 /* BlueTriangleSDK-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BlueTriangleSDK-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		38DC2CB2CD8C91A4705221E3BA2879FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BC6E2DDBEA34267B2DCE5C0F7EA999 /* BlueTriangle.h in Headers */,
+				3C3159BFD8F6930C9BFA33EBB043B963 /* BlueTriangleSDK-iOS-umbrella.h in Headers */,
+				2EDFB70E4B962A3C0437F522B12BAEFB /* BTTimer.h in Headers */,
+				F9B0021DAE73478FDC6A9E2C80113BC1 /* BTTracker.h in Headers */,
+				832B560C8DBCB877A7C81F5A7DB5FF7A /* BTUploader.h in Headers */,
+				1D295D1D0528AE5E568531A53AA93683 /* BTUploadOperation.h in Headers */,
+				106D035CEB6A4CC2C4D6315D208EE4CE /* ThreadSafeMutableDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		653385E334A1A686393B0277D261333A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85E5F9B6067ED1CE0395D1F3503B23F3 /* Pods-TestBlueTrainglePod-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAAB60D86CB1F81017A46361849E97B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749CEAD43B480BA3B27AC35761654E4E /* Pods-TestBlueTrainglePodTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A7C87B9BFFFAEFD95389CCAC79D0D19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0F648F2A4F0BD40CD243545B29082F /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2666F0E54351395515C1BC2B9C1DC2C3 /* Pods-TestBlueTrainglePodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A3834E18F85F301A67ADBD6CE97916 /* Build configuration list for PBXNativeTarget "Pods-TestBlueTrainglePodTests" */;
+			buildPhases = (
+				7DAAB60D86CB1F81017A46361849E97B /* Headers */,
+				E81599D14F9F79E9B50BADE365F81619 /* Sources */,
+				17AA968A60F36452440083E033F14301 /* Frameworks */,
+				DF7B33D9915FC44F3A239A37412366F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6084EBC5940BF2438239F2A3E3547F1 /* PBXTargetDependency */,
+			);
+			name = "Pods-TestBlueTrainglePodTests";
+			productName = "Pods-TestBlueTrainglePodTests";
+			productReference = 0FACF13A2C489F853019AA1515D3B183 /* Pods_TestBlueTrainglePodTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DE99BED19EC56AA3E6164CDA3CB666E /* Pods-TestBlueTrainglePod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344761554FD261B6EBD76F398B988733 /* Build configuration list for PBXNativeTarget "Pods-TestBlueTrainglePod" */;
+			buildPhases = (
+				653385E334A1A686393B0277D261333A /* Headers */,
+				9A4F5E18297D0F1B98A76F7483A336F8 /* Sources */,
+				FDAAB082A2CD8F9ECBA6091E2EC00AA5 /* Frameworks */,
+				E4CA44E9CC1E54FC6B59406B838DF887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD9949305EFC159F6142AA94C4DB96BE /* PBXTargetDependency */,
+			);
+			name = "Pods-TestBlueTrainglePod";
+			productName = "Pods-TestBlueTrainglePod";
+			productReference = B3FED70A90086E5C148AE7221B4D8770 /* Pods_TestBlueTrainglePod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2A49389588F5F47E0D61F1F7842B65E /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EC313643A62E8AEB8BF753E87DB9F1B /* Build configuration list for PBXNativeTarget "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests" */;
+			buildPhases = (
+				9A7C87B9BFFFAEFD95389CCAC79D0D19 /* Headers */,
+				778B2E6E96052AD9EF676FA20FDFE5A0 /* Sources */,
+				F4BC05D364C56AF76B0E990B5D244EFA /* Frameworks */,
+				367D3AB069889FE776DC017DC48EB64D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1073C05AE7D9682F5D15EEC5EFE377D /* PBXTargetDependency */,
+			);
+			name = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests";
+			productName = "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests";
+			productReference = E54E7D09F1170231944DD18A65C3606F /* Pods_TestBlueTrainglePod_TestBlueTrainglePodUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F221FF23ACACD5732804C4538CB9C56F /* BlueTriangleSDK-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73F7CF293530BE71593A201483E5B704 /* Build configuration list for PBXNativeTarget "BlueTriangleSDK-iOS" */;
+			buildPhases = (
+				38DC2CB2CD8C91A4705221E3BA2879FF /* Headers */,
+				1D8AF9AB7F0F275EF5BC436E72B62F8A /* Sources */,
+				E4E269A94926158E8A50007F90876796 /* Frameworks */,
+				BA8BE5B5468922529BEF19AA99B229D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlueTriangleSDK-iOS";
+			productName = "BlueTriangleSDK-iOS";
+			productReference = 34C2576CBC586CBD1A20002C03B06F6F /* BlueTriangleSDK_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1210;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 71BE970E29D0D305FDFA74ED0AD96423 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F221FF23ACACD5732804C4538CB9C56F /* BlueTriangleSDK-iOS */,
+				9DE99BED19EC56AA3E6164CDA3CB666E /* Pods-TestBlueTrainglePod */,
+				C2A49389588F5F47E0D61F1F7842B65E /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests */,
+				2666F0E54351395515C1BC2B9C1DC2C3 /* Pods-TestBlueTrainglePodTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		367D3AB069889FE776DC017DC48EB64D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA8BE5B5468922529BEF19AA99B229D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7B33D9915FC44F3A239A37412366F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CA44E9CC1E54FC6B59406B838DF887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D8AF9AB7F0F275EF5BC436E72B62F8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE576E15131AB20DE7CE7FC47D7F82DA /* BlueTriangleSDK-iOS-dummy.m in Sources */,
+				564562683B55CF9CA96CFC5AD8173C73 /* BTTimer.m in Sources */,
+				AE6AA0430743CE4C63F0A39055B4BADC /* BTTracker.m in Sources */,
+				967DD416A57F85784EC684FB5A8B6242 /* BTUploader.m in Sources */,
+				204062859FB507E5C0CB30D69B1367F8 /* BTUploadOperation.m in Sources */,
+				A55AB107F9FCAE9DA2C1AF7625210BE8 /* ThreadSafeMutableDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		778B2E6E96052AD9EF676FA20FDFE5A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D91C13EE230FA4E4BEE1C75F0EFF2C /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4F5E18297D0F1B98A76F7483A336F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCAC043989833BF3C6E399EAD0C1835 /* Pods-TestBlueTrainglePod-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81599D14F9F79E9B50BADE365F81619 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A88939B089D5D78EC51DB2117209C56 /* Pods-TestBlueTrainglePodTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD9949305EFC159F6142AA94C4DB96BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BlueTriangleSDK-iOS";
+			target = F221FF23ACACD5732804C4538CB9C56F /* BlueTriangleSDK-iOS */;
+			targetProxy = C739D0FCCC9CEA71220A70CF8C7B9D7F /* PBXContainerItemProxy */;
+		};
+		C6084EBC5940BF2438239F2A3E3547F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TestBlueTrainglePod";
+			target = 9DE99BED19EC56AA3E6164CDA3CB666E /* Pods-TestBlueTrainglePod */;
+			targetProxy = 3417C2623030F72BD988270680A17788 /* PBXContainerItemProxy */;
+		};
+		D1073C05AE7D9682F5D15EEC5EFE377D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "BlueTriangleSDK-iOS";
+			target = F221FF23ACACD5732804C4538CB9C56F /* BlueTriangleSDK-iOS */;
+			targetProxy = 845D3209DCAC0089FB01CAC647BC0E17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02D1C1C10A7F87B91494CD8C8B044BF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92E08FA00D6B036755FAABA5234ADEDB /* Pods-TestBlueTrainglePod.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestBlueTrainglePod/Pods-TestBlueTrainglePod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestBlueTrainglePod/Pods-TestBlueTrainglePod.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		411618372C578BAABB931BF85BD1A0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1255ABE3174954AF863D1200DCA99A49 /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		440DBDDCBACC2989FA90C9371B2DC383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7679B48A6140DBEB7749D450A679B75A /* Pods-TestBlueTrainglePod.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestBlueTrainglePod/Pods-TestBlueTrainglePod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestBlueTrainglePod/Pods-TestBlueTrainglePod.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5723B7A1ED101816956E95770940B6D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DEF06B196CAD97CE61F0E03B2DE5BD2 /* BlueTriangleSDK-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueTriangleSDK-iOS/BlueTriangleSDK-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueTriangleSDK-iOS/BlueTriangleSDK-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BlueTriangleSDK-iOS/BlueTriangleSDK-iOS.modulemap";
+				PRODUCT_MODULE_NAME = BlueTriangleSDK_iOS;
+				PRODUCT_NAME = BlueTriangleSDK_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B4971B73C892FAC11A1C71411DE16DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED90CF3EEFC965DCAC5F1D1147C45E5 /* BlueTriangleSDK-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BlueTriangleSDK-iOS/BlueTriangleSDK-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueTriangleSDK-iOS/BlueTriangleSDK-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BlueTriangleSDK-iOS/BlueTriangleSDK-iOS.modulemap";
+				PRODUCT_MODULE_NAME = BlueTriangleSDK_iOS;
+				PRODUCT_NAME = BlueTriangleSDK_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AF1F8D2941B0228930706FA0F2C9BB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C615C8179B3E489D23089C4DD02E5E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0272937D897EE4B172FBA8FA83227346 /* Pods-TestBlueTrainglePodTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestBlueTrainglePodTests/Pods-TestBlueTrainglePodTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestBlueTrainglePodTests/Pods-TestBlueTrainglePodTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0E39F345C7DC69A801C74B94C172EA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50B55389B27FE59AEBC8779D43372D3D /* Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests/Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2CD5CB156A1E8177D9EF33D1896EC44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB8B3C116B80E0B750A6D7334B116C6C /* Pods-TestBlueTrainglePodTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TestBlueTrainglePodTests/Pods-TestBlueTrainglePodTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TestBlueTrainglePodTests/Pods-TestBlueTrainglePodTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05A3834E18F85F301A67ADBD6CE97916 /* Build configuration list for PBXNativeTarget "Pods-TestBlueTrainglePodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CD5CB156A1E8177D9EF33D1896EC44 /* Debug */,
+				C615C8179B3E489D23089C4DD02E5E50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344761554FD261B6EBD76F398B988733 /* Build configuration list for PBXNativeTarget "Pods-TestBlueTrainglePod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440DBDDCBACC2989FA90C9371B2DC383 /* Debug */,
+				02D1C1C10A7F87B91494CD8C8B044BF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */,
+				AF1F8D2941B0228930706FA0F2C9BB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73F7CF293530BE71593A201483E5B704 /* Build configuration list for PBXNativeTarget "BlueTriangleSDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5723B7A1ED101816956E95770940B6D4 /* Debug */,
+				7B4971B73C892FAC11A1C71411DE16DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EC313643A62E8AEB8BF753E87DB9F1B /* Build configuration list for PBXNativeTarget "Pods-TestBlueTrainglePod-TestBlueTrainglePodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411618372C578BAABB931BF85BD1A0E4 /* Debug */,
+				D0E39F345C7DC69A801C74B94C172EA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

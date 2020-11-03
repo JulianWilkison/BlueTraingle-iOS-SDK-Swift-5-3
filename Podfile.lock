@@ -1,0 +1,16 @@
+PODS:
+  - BlueTriangleSDK-iOS (0.1.0)
+
+DEPENDENCIES:
+  - BlueTriangleSDK-iOS
+
+SPEC REPOS:
+  trunk:
+    - BlueTriangleSDK-iOS
+
+SPEC CHECKSUMS:
+  BlueTriangleSDK-iOS: fb639bd5222bba5e3490769e88dfcd29c31ec039
+
+PODFILE CHECKSUM: ff98f693afee4c6efab1250fc48ce4fdb26a0ee1
+
+COCOAPODS: 1.9.3
