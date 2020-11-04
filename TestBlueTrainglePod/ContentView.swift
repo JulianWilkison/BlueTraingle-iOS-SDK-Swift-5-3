@@ -10,12 +10,15 @@ import BlueTriangleSDK_iOS
 
 struct ContentView: View {
     var timer = BTTimer();
+    var tracker = BTTracker();
+    @EnvironmentObject var appDelegate: AppDelegate
+   
     var body: some View {
         VStack{
             Text("Hello, world!")
                 .padding()
             Button(action:{
-                timer.setPageName("My-Page-Name");
+                timer.setPageName("only-local-tracker");
                 timer.setTrafficSegmentName("my-Traffic-Segment");
                 timer.setCampaignName("campaign-1");
                 timer.setCampaignMedium("mobile-ios");
@@ -25,8 +28,7 @@ struct ContentView: View {
                 Text("Start Timer")
             }
             Button(action:{
-                
-                BTTracker().submitTimer(self.timer);
+                appDelegate.tracker.submitTimer(self.timer)
                 
             }){
                 Text("Stop Timer")

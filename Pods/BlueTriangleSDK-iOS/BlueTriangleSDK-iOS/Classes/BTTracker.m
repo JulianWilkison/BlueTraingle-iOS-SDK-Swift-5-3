@@ -30,7 +30,7 @@ NSString * const kGlobalUserIDUserDefault = @"com.bluetriangle.kGlobalUserIDUser
 - (instancetype)init {
     if (self = [super init]) {
         self.globalFields = [ThreadSafeMutableDictionary new];
-        self.uploader = [[BTUploader alloc] initWithURL:[NSURL URLWithString:@"http://3.221.132.81/analytics.rcv"]];
+        self.uploader = [[BTUploader alloc] initWithURL:[NSURL URLWithString:@"https://d.btttag.com/analytics.rcv"]];
 
         [self setSessionID:[self randomID]];
         [self setGlobalUserID:[self getOrCreatGlobalUserID]];
