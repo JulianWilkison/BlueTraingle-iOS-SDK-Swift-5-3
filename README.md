@@ -1,4 +1,4 @@
-# BlueTraingle-iOS-SDK-Swift-5-3
+# BlueTriangle-iOS-SDK-Swift-5-3
 Blue Triangle iOS SDK example for swift 5.3 
 
 == Install instructions ==
